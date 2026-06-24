@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     🔧 PANDUAN ISI DATA (cari semua tulisan "🔧 GANTI" di file ini)
+     1. Nomor WhatsApp  -> cari: 6281234567890   (ada 3 tempat)
+     2. Alamat & Maps   -> cari: 🔧 GANTI ALAMAT  /  🔧 GANTI MAPS
+     3. Telepon         -> cari: 🔧 GANTI TELEPON
+     4. Instagram       -> cari: autoplus.carwash.pasuruan
+     5. Foto            -> cari: 🔧 GANTI FOTO
+     6. Testimoni       -> cari: 🔧 GANTI TESTIMONI
+     7. Before/After    -> cari: 🔧 GANTI BEFORE-AFTER
+     8. Menu Kopi       -> cari: 🔧 GANTI MENU
+     9. Domain website  -> cari: 🔧 GANTI DOMAIN
+     ============================================================ -->
+
+<title>Cuci Mobil Pasuruan | Auto Plus Carwash &amp; Detailing</title>
+<meta name="description" content="Auto Plus Carwash &amp; Detailing — jasa cuci mobil & motor premium dan detailing di Pasuruan sejak 2012. Grab/Gojek Wash, Shine Wash, Premium Wash. Buka setiap hari 07.30–19.30. Booking via WhatsApp.">
+<meta name="keywords" content="cuci mobil pasuruan, carwash pasuruan, detailing mobil pasuruan, cuci motor pasuruan, nano coating pasuruan, salon mobil pasuruan">
+<meta name="author" content="Auto Plus Carwash">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://autoplus-pasuruan.com/">
+
+<!-- Open Graph (preview saat di-share di WhatsApp / Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cuci Mobil Pasuruan | Auto Plus Carwash & Detailing">
+<meta property="og:description" content="Cuci mobil & detailing premium di Pasuruan. Berdiri sejak 2012, 438+ review pelanggan. Booking via WhatsApp.">
+<meta property="og:image" content="https://autoplus-pasuruan.com/foto-utama.jpg">
+<meta property="og:locale" content="id_ID">
+
+<!-- Data bisnis lokal untuk Google (LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoWash",
+  "name": "Auto Plus Carwash & Detailing",
+  "image": "https://autoplus-pasuruan.com/foto-utama.jpg",
+  "description": "Jasa cuci mobil & motor premium dan detailing di Pasuruan sejak 2012.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Panglima Sudirman No. 90",
+    "addressLocality": "Pasuruan",
+    "addressRegion": "Jawa Timur",
+    "postalCode": "67115",
+    "addressCountry": "ID"
+  },
+  "telephone": "+6289661173827",
+  "openingHours": "Mo-Su 07:30-19:30",
+  "priceRange": "Rp 30.000 - Rp 500.000",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.0",
+    "reviewCount": "438"
+  }
+}
+</script>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --red:    #e01020;
+    --red-dark: #b00c18;
+    --blue:   #1a3a9e;
+    --blue-dark: #102880;
+    --yellow: #f5c800;
+    --yellow-dark: #d4a800;
+    --white:  #ffffff;
+    --off-white: #f4f6ff;
+    --bg:     #0d0d0d;
+    --card:   #141414;
+    --card2:  #1a1a1a;
+    --border: #2a2a2a;
+    --muted:  #888;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ── NAVBAR ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 20px;
+    height: 62px;
+    background: var(--blue-dark);
+    border-bottom: 3px solid var(--red);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; }
+  .logo-badge {
+    display: flex; flex-direction: column; align-items: flex-start; line-height: 1;
+  }
+  .logo-auto {
+    font-size: 20px; font-weight: 900; font-style: italic;
+    color: var(--red); text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+    letter-spacing: -0.5px;
+  }
+  .logo-plus {
+    font-size: 20px; font-weight: 900; font-style: italic;
+    color: var(--white); text-shadow: 1px 1px 0 #000;
+    margin-top: -4px; letter-spacing: -0.5px;
+  }
+  .logo-sub {
+    font-size: 8px; font-weight: 700; color: var(--yellow);
+    letter-spacing: 1px; text-transform: uppercase; margin-top: 1px;
+  }
+  .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; }
+  .hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: .3s; }
+
+  /* mobile menu */
+  .mobile-menu {
+    display: none; position: fixed; top: 62px; left: 0; right: 0; z-index: 998;
+    background: var(--blue-dark);
+    border-bottom: 3px solid var(--red);
+    flex-direction: column; gap: 0;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    color: var(--white); text-decoration: none; padding: 14px 20px;
+    font-size: 15px; font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: background .2s;
+  }
+  .mobile-menu a:hover { background: var(--red); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    /* 🔧 GANTI FOTO: ganti URL di bawah dengan foto asli depan/tempat Auto Plus */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.65) 55%, #0d0d0d 100%),
+                url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80') center/cover no-repeat;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0 20px 56px;
+    padding-top: 62px;
+  }
+  /* top stripe */
+  .hero::before {
+    content: ''; position: absolute; top: 62px; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, var(--red), var(--yellow), var(--red));
+  }
+  .hero { position: relative; }
+  .hero-content { max-width: 560px; }
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--red); color: #fff;
+    font-size: 11px; font-weight: 800; letter-spacing: 1.5px;
+    padding: 5px 14px; border-radius: 4px; margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: clamp(30px, 8vw, 52px);
+    font-weight: 900; line-height: 1.05;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.6);
+  }
+  .hero h1 span { color: var(--yellow); }
+  .hero p {
+    font-size: 15px; color: #ccc; margin-bottom: 28px; line-height: 1.6;
+  }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-red {
+    padding: 14px 26px; background: var(--red); color: #fff;
+    border: none; border-radius: 8px; font-size: 15px; font-weight: 700;
+    cursor: pointer; text-decoration: none; display: inline-block; transition: .2s;
+    box-shadow: 0 4px 16px rgba(224,16,32,0.4);
+  }
+  .btn-red:hover { background: var(--red-dark); transform: translateY(-1px); }
+  .btn-outline-yellow {
+    padding: 14px 26px; background: transparent; color: var(--yellow);
+    border: 2px solid var(--yellow); border-radius: 8px;
+    font-size: 15px; font-weight: 700; cursor: pointer;
+    text-decoration: none; display: inline-block; transition: .2s;
+  }
+  .btn-outline-yellow:hover { background: var(--yellow); color: #000; }
+
+  /* ── SECTION BASE ── */
+  section { padding: 56px 20px; }
+  .section-title {
+    text-align: center; font-size: clamp(22px, 6vw, 34px);
+    font-weight: 900; color: var(--white); margin-bottom: 6px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .section-title span { color: var(--yellow); }
+  .section-sub {
+    text-align: center; color: var(--muted); font-size: 13px; margin-bottom: 32px;
+  }
+  .red-line {
+    width: 50px; height: 4px; background: var(--red);
+    border-radius: 2px; margin: 8px auto 32px;
+  }
+
+  /* ── ABOUT ── */
+  .about { background: var(--bg); }
+  .about-text { color: #bbb; font-size: 14px; line-height: 1.8; margin-bottom: 14px; }
+  .stats {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 10px; margin-top: 24px;
+  }
+  .stat-card {
+    background: var(--blue-dark); border: 2px solid var(--blue);
+    border-radius: 10px; padding: 18px 10px; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .stat-card::before {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+    background: var(--yellow);
+  }
+  .stat-num {
+    font-size: clamp(26px, 7vw, 40px); font-weight: 900;
+    color: var(--yellow); display: block;
+  }
+  .stat-label { font-size: 11px; color: #aac; margin-top: 4px; }
+  .about-img {
+    width: 100%; border-radius: 12px; margin-top: 24px;
+    height: 210px; overflow: hidden; border: 2px solid var(--red);
+  }
+  .about-img img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* ── SERVICE BADGES ── */
+  .service-badges {
+    display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+    padding: 20px; background: var(--blue-dark);
+    border-top: 3px solid var(--red); border-bottom: 3px solid var(--red);
+    margin-bottom: 0;
+  }
+  .badge-item {
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50px; padding: 10px 18px;
+    font-size: 11px; font-weight: 700; color: #fff;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .badge-item span { font-size: 20px; }
+
+  /* ── SERVICES ── */
+  .services { background: var(--card2); }
+  .filter-tabs {
+    display: flex; gap: 8px; justify-content: center;
+    flex-wrap: wrap; margin-bottom: 24px;
+  }
+  .tab {
+    padding: 9px 22px; border-radius: 6px;
+    border: 2px solid var(--border); background: transparent;
+    color: var(--muted); font-size: 13px; font-weight: 700;
+    cursor: pointer; transition: .2s; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .tab.active { background: var(--red); color: #fff; border-color: var(--red); }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+  }
+  .service-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+    transition: transform .2s, border-color .2s;
+    display: none;
+  }
+  .service-card.visible { display: block; }
+  .service-card:hover { transform: translateY(-3px); border-color: var(--red); }
+  .service-img {
+    width: 100%; height: 130px;
+    background: linear-gradient(135deg, var(--blue-dark), #0a1a5e);
+    position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 44px;
+  }
+  .cat-badge {
+    position: absolute; top: 8px; left: 8px; z-index: 1;
+    background: var(--red); color: #fff;
+    font-size: 9px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; letter-spacing: 0.8px; text-transform: uppercase;
+  }
+  .service-body { padding: 12px 14px; }
+  .service-name { font-size: 14px; font-weight: 800; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+  .service-desc { font-size: 11px; color: var(--muted); margin-bottom: 10px; line-height: 1.5; }
+  .service-price { font-size: 19px; font-weight: 900; color: var(--yellow); }
+
+  /* ── PACKAGES ── */
+  .packages { background: var(--bg); }
+  .pkg-grid { display: flex; flex-direction: column; gap: 14px; }
+  .pkg-card {
+    border-radius: 12px; padding: 22px 18px; overflow: hidden; position: relative;
+  }
+  .pkg-card.silver {
+    background: linear-gradient(135deg, #1a2a5e, #0d1a3e);
+    border: 2px solid #4a6adf;
+  }
+  .pkg-card.gold {
+    background: linear-gradient(135deg, #3a2000, #1a0e00);
+    border: 2px solid var(--yellow);
+  }
+  .pkg-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  }
+  .pkg-card.silver::before { background: #4a6adf; }
+  .pkg-card.gold::before { background: var(--yellow); }
+  .pkg-title {
+    font-size: 24px; font-weight: 900; margin-bottom: 4px; text-transform: uppercase;
+  }
+  .pkg-card.silver .pkg-title { color: #8ab4ff; }
+  .pkg-card.gold .pkg-title { color: var(--yellow); }
+  .pkg-from { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+  .pkg-list { list-style: none; }
+  .pkg-list li {
+    font-size: 13px; color: #ddd; padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .pkg-list li::before { font-size: 14px; }
+  .pkg-card.silver .pkg-list li::before { content: '✦'; color: #8ab4ff; }
+  .pkg-card.gold .pkg-list li::before { content: '★'; color: var(--yellow); }
+
+  /* ── FACILITIES ── */
+  .facilities { background: var(--card2); }
+  .fac-list { display: flex; flex-direction: column; gap: 12px; }
+  .fac-card {
+    background: var(--card); border-left: 4px solid var(--red);
+    border-radius: 10px; padding: 18px 16px;
+    display: flex; align-items: flex-start; gap: 14px;
+  }
+  .fac-icon { font-size: 32px; flex-shrink: 0; }
+  .fac-name { font-size: 15px; font-weight: 800; color: var(--yellow); margin-bottom: 4px; text-transform: uppercase; }
+  .fac-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  /* ── BOOKING CTA ── */
+  .booking-cta { background: var(--blue-dark); text-align: center; padding: 50px 20px; position: relative; }
+  .booking-cta::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--red), var(--yellow), var(--red));
+  }
+  .booking-cta::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--red), var(--yellow), var(--red));
+  }
+  .booking-box {
+    background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px; padding: 28px 20px; max-width: 420px; margin: 0 auto;
+    display: flex; flex-direction: column; gap: 14px; align-items: center;
+  }
+  .qr-placeholder {
+    width: 100px; height: 100px; background: #fff; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; color: #333; text-align: center; padding: 6px;
+    border: 3px solid var(--yellow);
+  }
+  .btn-book {
+    width: 100%; padding: 15px; border-radius: 8px;
+    background: var(--yellow); color: #000;
+    font-size: 16px; font-weight: 900; border: none; cursor: pointer;
+    text-decoration: none; display: block; transition: .2s;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .btn-book:hover { background: var(--yellow-dark); transform: translateY(-1px); }
+  .btn-wa {
+    width: 100%; padding: 14px; border-radius: 8px;
+    background: #25d366; color: #fff;
+    font-size: 15px; font-weight: 700; border: none; cursor: pointer;
+    text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;
+    transition: .2s;
+  }
+  .btn-wa:hover { background: #1ebe59; }
+  .cta-note { font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+  .cta-ig { font-size: 13px; color: var(--yellow); font-weight: 600; }
+
+  /* ── CONTACT ── */
+  .contact { background: var(--bg); }
+  .contact-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px 18px; margin-bottom: 14px;
+    border-left: 4px solid var(--blue);
+  }
+  .contact-section-title {
+    font-size: 15px; font-weight: 800; color: var(--yellow);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;
+  }
+  .contact-item {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 10px 0; border-bottom: 1px solid var(--border);
+  }
+  .contact-item:last-child { border-bottom: none; }
+  .contact-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+  .contact-label { font-size: 13px; font-weight: 700; color: #ddd; margin-bottom: 3px; }
+  .contact-val { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .ig-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 18px; border-radius: 6px;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    color: #fff; font-size: 13px; font-weight: 700;
+    text-decoration: none; margin-top: 8px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--blue-dark); padding: 28px 20px;
+    border-top: 4px solid var(--red); text-align: center;
+  }
+  .footer-logo {
+    font-size: 22px; font-weight: 900; font-style: italic; margin-bottom: 2px;
+  }
+  .footer-logo .r { color: var(--red); }
+  .footer-tag { font-size: 11px; color: var(--yellow); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
+  .footer-links {
+    display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 14px;
+  }
+  .footer-links a { color: #aac; font-size: 12px; text-decoration: none; }
+  .footer-copy { font-size: 10px; color: #445; }
+
+  /* ── SCROLL TOP ── */
+  .scroll-top {
+    position: fixed; bottom: 22px; right: 18px; z-index: 999;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--red); color: #fff; border: none;
+    font-size: 20px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 16px rgba(224,16,32,0.5);
+    transition: .2s; opacity: 0; pointer-events: none;
+  }
+  .scroll-top.show { opacity: 1; pointer-events: all; }
+  .scroll-top:hover { background: var(--red-dark); transform: translateY(-2px); }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials { background: var(--bg); }
+  .rating-summary {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 4px; margin-bottom: 28px;
+  }
+  .rating-big { font-size: 48px; font-weight: 900; color: var(--yellow); line-height: 1; }
+  .rating-stars { font-size: 20px; letter-spacing: 2px; }
+  .rating-count { font-size: 12px; color: var(--muted); }
+  .testi-grid { display: flex; flex-direction: column; gap: 12px; }
+  .testi-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-left: 4px solid var(--yellow);
+    border-radius: 12px; padding: 18px 16px;
+  }
+  .testi-stars { color: var(--yellow); font-size: 13px; letter-spacing: 1px; margin-bottom: 8px; }
+  .testi-text { font-size: 13px; color: #ddd; line-height: 1.6; margin-bottom: 12px; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 10px; }
+  .testi-avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--blue-dark); border: 2px solid var(--red);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; color: var(--yellow); font-size: 14px;
+  }
+  .testi-name { font-size: 13px; font-weight: 700; color: #fff; }
+  .testi-meta { font-size: 11px; color: var(--muted); }
+
+  /* ── BEFORE / AFTER ── */
+  .beforeafter { background: var(--card2); }
+  .ba-wrap {
+    position: relative; width: 100%; max-width: 480px; margin: 0 auto;
+    aspect-ratio: 4/3; border-radius: 14px; overflow: hidden;
+    border: 2px solid var(--red); user-select: none;
+  }
+  .ba-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .ba-after { clip-path: inset(0 0 0 50%); }
+  .ba-label {
+    position: absolute; bottom: 10px; z-index: 3;
+    font-size: 10px; font-weight: 800; letter-spacing: 1px;
+    padding: 4px 10px; border-radius: 4px; text-transform: uppercase; color: #fff;
+  }
+  .ba-label.before { left: 10px; background: rgba(0,0,0,0.6); }
+  .ba-label.after  { right: 10px; background: var(--red); }
+  .ba-line {
+    position: absolute; top: 0; bottom: 0; left: 50%; width: 3px;
+    background: var(--yellow); z-index: 4; transform: translateX(-50%); pointer-events: none;
+  }
+  .ba-handle {
+    position: absolute; top: 50%; left: 50%; z-index: 5;
+    width: 38px; height: 38px; border-radius: 50%;
+    background: var(--yellow); color: #000; border: 3px solid #fff;
+    transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 900; pointer-events: none;
+  }
+  .ba-range {
+    position: absolute; inset: 0; z-index: 6; width: 100%; height: 100%;
+    margin: 0; opacity: 0; cursor: ew-resize;
+  }
+  .ba-hint { text-align: center; font-size: 12px; color: var(--muted); margin-top: 14px; }
+
+  /* ── MEMBERSHIP ── */
+  .membership { background: var(--bg); }
+  .member-card {
+    max-width: 440px; margin: 0 auto 18px;
+    background: linear-gradient(135deg, var(--blue-dark), #0a1a5e);
+    border: 2px solid var(--yellow); border-radius: 16px;
+    padding: 24px 20px; position: relative; overflow: hidden;
+  }
+  .member-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--red), var(--yellow), var(--red));
+  }
+  .member-tag {
+    display: inline-block; background: var(--red); color: #fff;
+    font-size: 10px; font-weight: 800; letter-spacing: 1px;
+    padding: 4px 12px; border-radius: 4px; text-transform: uppercase; margin-bottom: 12px;
+  }
+  .member-title { font-size: 22px; font-weight: 900; color: var(--yellow); margin-bottom: 4px; }
+  .member-price { font-size: 14px; color: #cdd; margin-bottom: 16px; }
+  .member-list { list-style: none; }
+  .member-list li {
+    font-size: 13px; color: #eee; padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .member-list li::before { content: '✓'; color: var(--yellow); font-weight: 900; }
+  .member-note { text-align: center; font-size: 12px; color: var(--muted); }
+
+  /* ── COFFEE MENU ── */
+  .coffee { background: var(--card2); }
+  .coffee-intro { text-align: center; color: #bbb; font-size: 13px; line-height: 1.7; max-width: 440px; margin: 0 auto 26px; }
+  .menu-list { max-width: 440px; margin: 0 auto; }
+  .menu-row {
+    display: flex; align-items: baseline; gap: 8px;
+    padding: 11px 0; border-bottom: 1px dashed var(--border);
+  }
+  .menu-name { font-size: 14px; font-weight: 700; color: #fff; white-space: nowrap; }
+  .menu-dots { flex: 1; border-bottom: 1px dotted #555; transform: translateY(-4px); }
+  .menu-price { font-size: 14px; font-weight: 800; color: var(--yellow); white-space: nowrap; }
+  .menu-cat { font-size: 12px; font-weight: 800; color: var(--red); text-transform: uppercase; letter-spacing: 1px; margin: 18px 0 4px; }
+
+  /* ── MAP ── */
+  .map-section { background: var(--bg); padding-top: 0; }
+  .map-frame {
+    width: 100%; height: 280px; border-radius: 12px; overflow: hidden;
+    border: 2px solid var(--blue); margin-top: 8px;
+  }
+  .map-frame iframe { width: 100%; height: 100%; border: 0; filter: grayscale(0.2); }
+  .map-placeholder {
+    width: 100%; height: 280px; border-radius: 12px;
+    border: 2px dashed var(--blue); margin-top: 8px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 8px; text-align: center; color: var(--muted); font-size: 13px; padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-badge">
+      <div><span class="logo-auto">AUTO</span><span class="logo-plus"> PLUS</span></div>
+      <div class="logo-sub">Carwash &amp; Detailing</div>
+    </div>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">Tentang Kami</a>
+  <a href="#services" onclick="closeMenu()">Layanan</a>
+  <a href="#beforeafter" onclick="closeMenu()">Before / After</a>
+  <a href="#testimonials" onclick="closeMenu()">Testimoni</a>
+  <a href="#coffee" onclick="closeMenu()">Teman Coffee</a>
+  <a href="#facilities" onclick="closeMenu()">Fasilitas</a>
+  <a href="#booking" onclick="closeMenu()">Booking</a>
+  <a href="#contact" onclick="closeMenu()">Kontak</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="hero-eyebrow">🚗 Carwash &amp; Detailing Pasuruan</span>
+    <h1>Cuci Mobil <span>Premium</span> &amp; Detailing</h1>
+    <p>Kendaraan bersih, kilap, dan terawat. Tim profesional Auto Plus siap melayani Anda setiap hari di Pasuruan.</p>
+    <div class="hero-btns">
+      <a href="#booking" class="btn-red">📅 Booking Sekarang</a>
+      <a href="#services" class="btn-outline-yellow">Lihat Layanan</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE BADGES -->
+<div class="service-badges">
+  <div class="badge-item"><span>🚿</span>CUCI MOBIL</div>
+  <div class="badge-item"><span>✨</span>DETAILING</div>
+  <div class="badge-item"><span>🪑</span>INTERIOR</div>
+  <div class="badge-item"><span>🛡️</span>PREMIUM PROTECTION</div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2 class="section-title">Auto <span>Plus</span> Carwash</h2>
+  <div class="red-line"></div>
+  <p class="about-text">Auto Plus Carwash hadir untuk memberikan pengalaman cuci mobil terbaik bagi pelanggan Pasuruan dan sekitarnya. Dengan tim profesional berpengalaman, kami memastikan setiap kendaraan mendapatkan perawatan maksimal — tampak bersih, berkilau, dan terawat.</p>
+  <p class="about-text">Menggunakan produk berkualitas premium dan teknik cuci modern yang aman untuk cat kendaraan Anda, dengan komitmen penuh pada kepuasan pelanggan.</p>
+  <div class="stats">
+    <div class="stat-card">
+      <span class="stat-num">14+</span>
+      <div class="stat-label">Tahun Beroperasi</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">4.0</span>
+      <div class="stat-label">Rating Google</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">438</span>
+      <div class="stat-label">Review Pelanggan</div>
+    </div>
+  </div>
+  <div class="about-img">
+    <!-- 🔧 GANTI FOTO: foto asli tim/tempat Auto Plus -->
+    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&q=80" alt="Auto Plus Carwash Pasuruan">
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2 class="section-title">Layanan <span>Kami</span></h2>
+  <div class="red-line"></div>
+
+  <div class="filter-tabs">
+    <button class="tab active" onclick="filterCat('all',this)">Semua</button>
+    <button class="tab" onclick="filterCat('mobil',this)">Mobil</button>
+    <button class="tab" onclick="filterCat('motor',this)">Motor</button>
+    <button class="tab" onclick="filterCat('detailing',this)">Detailing</button>
+    <button class="tab" onclick="filterCat('tambahan',this)">Tambahan</button>
+  </div>
+
+  <div class="services-grid" id="servicesGrid">
+    <!-- MOBIL - Grab/Gojek -->
+    <div class="service-card visible" data-cat="mobil">
+      <div class="service-img">🛵<span class="cat-badge">GRAB / GOJEK</span></div>
+      <div class="service-body">
+        <div class="service-name">Grab / Gojek Wash</div>
+        <div class="service-desc">Cuci · Vacuum · Kering · Silikon</div>
+        <div class="service-price">M 30K &nbsp;|&nbsp; L 40K &nbsp;|&nbsp; XL 50K</div>
+      </div>
+    </div>
+    <!-- MOBIL - Shine Wash -->
+    <div class="service-card visible" data-cat="mobil">
+      <div class="service-img">✨<span class="cat-badge">PALING LARIS</span></div>
+      <div class="service-body">
+        <div class="service-name">Shine Wash</div>
+        <div class="service-desc">Cuci · Vacuum · Kering · Silikon · Shampo Wax</div>
+        <div class="service-price">M 40K &nbsp;|&nbsp; L 50K &nbsp;|&nbsp; XL 60K</div>
+      </div>
+    </div>
+    <!-- MOBIL - Premium Wash -->
+    <div class="service-card visible" data-cat="mobil">
+      <div class="service-img">🏆<span class="cat-badge">PREMIUM</span></div>
+      <div class="service-body">
+        <div class="service-name">Premium Wash</div>
+        <div class="service-desc">Cuci · Vacuum · Kering · Silikon · Wax · Perawatan Dashboard, Jok &amp; Kaca</div>
+        <div class="service-price">M 50K &nbsp;|&nbsp; L 60K &nbsp;|&nbsp; XL 70K</div>
+      </div>
+    </div>
+    <!-- MOBIL - Pick Up -->
+    <div class="service-card visible" data-cat="mobil">
+      <div class="service-img">🚚<span class="cat-badge">MOBIL</span></div>
+      <div class="service-body">
+        <div class="service-name">Pick Up Wash</div>
+        <div class="service-desc">Layanan cuci khusus kendaraan pick up</div>
+        <div class="service-price">Rp 35.000</div>
+      </div>
+    </div>
+    <!-- MOTOR -->
+    <div class="service-card visible" data-cat="motor">
+      <div class="service-img">🏍️<span class="cat-badge">MOTOR</span></div>
+      <div class="service-body">
+        <div class="service-name">Motor Wash</div>
+        <div class="service-desc">Cuci motor bersih dan kinclong</div>
+        <div class="service-price">Rp 10.000 – 30.000</div>
+      </div>
+    </div>
+    <!-- DETAILING - Full Interior -->
+    <div class="service-card visible" data-cat="detailing">
+      <div class="service-img">🛡️<span class="cat-badge">DETAILING</span></div>
+      <div class="service-body">
+        <div class="service-name">Full Interior Detailing</div>
+        <div class="service-desc">Deep Cleaning Interior · Dashboard · Jok · Karpet · Plafon · Bagasi</div>
+        <div class="service-price">Mulai 500K</div>
+      </div>
+    </div>
+    <!-- DETAILING - Quick Wax -->
+    <div class="service-card visible" data-cat="detailing">
+      <div class="service-img">💎<span class="cat-badge">TREATMENT</span></div>
+      <div class="service-body">
+        <div class="service-name">Quick Wax</div>
+        <div class="service-desc">Perlindungan body kendaraan dengan wax cepat</div>
+        <div class="service-price">Rp 100.000</div>
+      </div>
+    </div>
+    <!-- DETAILING - Meguiars -->
+    <div class="service-card visible" data-cat="detailing">
+      <div class="service-img">🌟<span class="cat-badge">TREATMENT</span></div>
+      <div class="service-body">
+        <div class="service-name">Meguiars Wax</div>
+        <div class="service-desc">Proteksi premium dengan produk Meguiars</div>
+        <div class="service-price">Rp 150.000</div>
+      </div>
+    </div>
+    <!-- DETAILING - Fogging -->
+    <div class="service-card visible" data-cat="detailing">
+      <div class="service-img">💨<span class="cat-badge">TREATMENT</span></div>
+      <div class="service-body">
+        <div class="service-name">Fogging</div>
+        <div class="service-desc">Disinfeksi kabin kendaraan secara menyeluruh</div>
+        <div class="service-price">Rp 100.000</div>
+      </div>
+    </div>
+    <!-- DETAILING - Karpet -->
+    <div class="service-card visible" data-cat="detailing">
+      <div class="service-img">🧹<span class="cat-badge">TREATMENT</span></div>
+      <div class="service-body">
+        <div class="service-name">Karpet Dasar</div>
+        <div class="service-desc">Cuci dan bersihkan karpet dasar kendaraan</div>
+        <div class="service-price">Rp 100.000</div>
+      </div>
+    </div>
+    <!-- JAMUR KACA Sedan -->
+    <div class="service-card visible" data-cat="detailing">
+      <div class="service-img">🔬<span class="cat-badge">JAMUR KACA</span></div>
+      <div class="service-body">
+        <div class="service-name">Jamur Kaca – Sedan / City Car</div>
+        <div class="service-desc">Depan · Full seluruh kaca</div>
+        <div class="service-price">Depan 150K &nbsp;|&nbsp; Full 250K</div>
+      </div>
+    </div>
+    <!-- JAMUR KACA SUV -->
+    <div class="service-card visible" data-cat="detailing">
+      <div class="service-img">🔬<span class="cat-badge">JAMUR KACA</span></div>
+      <div class="service-body">
+        <div class="service-name">Jamur Kaca – SUV / MPV</div>
+        <div class="service-desc">Depan · Full seluruh kaca</div>
+        <div class="service-price">Depan 200K &nbsp;|&nbsp; Full 300K</div>
+      </div>
+    </div>
+    <!-- TAMBAHAN -->
+    <div class="service-card visible" data-cat="tambahan">
+      <div class="service-img">🔧<span class="cat-badge">TAMBAHAN</span></div>
+      <div class="service-body">
+        <div class="service-name">Lap Mesin</div>
+        <div class="service-desc">Pembersihan ruang mesin</div>
+        <div class="service-price">Rp 5.000</div>
+      </div>
+    </div>
+    <div class="service-card visible" data-cat="tambahan">
+      <div class="service-img">🚗<span class="cat-badge">TAMBAHAN</span></div>
+      <div class="service-body">
+        <div class="service-name">Ban Berlumpur</div>
+        <div class="service-desc">Pembersihan ban berlumpur ekstra</div>
+        <div class="service-price">Rp 10.000</div>
+      </div>
+    </div>
+    <div class="service-card visible" data-cat="tambahan">
+      <div class="service-img">❄️<span class="cat-badge">TAMBAHAN</span></div>
+      <div class="service-body">
+        <div class="service-name">AC Cleaner</div>
+        <div class="service-desc">Pembersihan dan perawatan AC kendaraan</div>
+        <div class="service-price">Rp 25.000</div>
+      </div>
+    </div>
+    <div class="service-card visible" data-cat="tambahan">
+      <div class="service-img">🏎️<span class="cat-badge">TAMBAHAN</span></div>
+      <div class="service-body">
+        <div class="service-name">Cuci Cover Mobil</div>
+        <div class="service-desc">Cuci cover / sarung mobil</div>
+        <div class="service-price">Rp 20.000</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- BEFORE / AFTER -->
+<section class="beforeafter" id="beforeafter">
+  <h2 class="section-title">Before <span>&amp; After</span></h2>
+  <div class="red-line"></div>
+  <p class="section-sub">Geser untuk lihat hasil detailing kami</p>
+
+  <div class="ba-wrap">
+    <!-- 🔧 GANTI BEFORE-AFTER: ganti 2 URL foto di bawah dengan foto sebelum & sesudah asli -->
+    <img class="ba-img ba-before" src="https://images.unsplash.com/photo-1605164599901-db7f68c4b3a3?w=800&q=80" alt="Sebelum detailing">
+    <img class="ba-img ba-after" id="baAfter" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80" alt="Sesudah detailing">
+    <span class="ba-label before">Sebelum</span>
+    <span class="ba-label after">Sesudah</span>
+    <div class="ba-line" id="baLine"></div>
+    <div class="ba-handle" id="baHandle">⇆</div>
+    <input class="ba-range" id="baRange" type="range" min="0" max="100" value="50" aria-label="Geser before after">
+  </div>
+  <p class="ba-hint">👆 Tarik garis kuning ke kiri / kanan</p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <h2 class="section-title">Apa Kata <span>Pelanggan</span></h2>
+  <div class="red-line"></div>
+
+  <div class="rating-summary">
+    <div class="rating-big">4.0</div>
+    <div class="rating-stars">⭐⭐⭐⭐</div>
+    <div class="rating-count">dari 438 review di Google Maps</div>
+  </div>
+
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testi-text">"Bolak balik cuci mobil disini, pelayanan nya oke, gercep, ramah. Tempat nunggu jg nyaman, ada banyak macem jenis minuman dan makanan."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">U</div>
+        <div>
+          <div class="testi-name">Uswatun Khasanah</div>
+          <div class="testi-meta">Pelanggan Setia • Google Maps</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testi-text">"Tempat cuci langganan dari bbrp tahun selalu nyuci di sini. Tempatnya luas, ready makanan dan minuman juga."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">M</div>
+        <div>
+          <div class="testi-name">Mia Asrifaningtyas</div>
+          <div class="testi-meta">Local Guide • Google Maps</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testi-text">"Slalu langganan disini kalo cuci mobil, tmptnya nyaman, super bersih mobil makin glowing, pelayanan juga ramah bgt."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">A</div>
+        <div>
+          <div class="testi-name">Anike Puspita</div>
+          <div class="testi-meta">Pelanggan Setia • Google Maps</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testi-text">"Tempat cucian nyaman..bersih...petugas ramah dan sampai malam lagi."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">A</div>
+        <div>
+          <div class="testi-name">Adji Prabowo</div>
+          <div class="testi-meta">Local Guide • Google Maps</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COFFEE MENU -->
+<section class="coffee" id="coffee">
+  <h2 class="section-title">Menu <span>Teman Coffee</span></h2>
+  <div class="red-line"></div>
+  <p class="coffee-intro">Sambil menunggu kendaraan selesai, nikmati kopi & minuman segar dari Teman Coffee.</p>
+
+  <div class="menu-list">
+    <div class="menu-cat">Coffee</div>
+    <div class="menu-row"><span class="menu-name">Americano</span><span class="menu-dots"></span><span class="menu-price">Rp 8.000</span></div>
+    <div class="menu-row"><span class="menu-name">Kopi Tubruk ⭐ New</span><span class="menu-dots"></span><span class="menu-price">Rp 5.000</span></div>
+
+    <div class="menu-cat">Signature Coffee</div>
+    <div class="menu-row"><span class="menu-name">Renjana</span><span class="menu-dots"></span><span class="menu-price">Rp 10.000</span></div>
+    <div class="menu-row"><span class="menu-name">Kahwa</span><span class="menu-dots"></span><span class="menu-price">Rp 10.000</span></div>
+    <div class="menu-row"><span class="menu-name">Sakala</span><span class="menu-dots"></span><span class="menu-price">Rp 10.000</span></div>
+
+    <div class="menu-cat">Premium Coffee</div>
+    <div class="menu-row"><span class="menu-name">Caramel ⭐ Best Seller</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+    <div class="menu-row"><span class="menu-name">Hazelnut</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+    <div class="menu-row"><span class="menu-name">Butterscotch</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+
+    <div class="menu-cat">Non-Coffee</div>
+    <div class="menu-row"><span class="menu-name">Milo Oreo ⭐ New</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+    <div class="menu-row"><span class="menu-name">Matcha ⭐ Best Seller</span><span class="menu-dots"></span><span class="menu-price">Rp 10.000</span></div>
+    <div class="menu-row"><span class="menu-name">Redvelvet</span><span class="menu-dots"></span><span class="menu-price">Rp 10.000</span></div>
+    <div class="menu-row"><span class="menu-name">Taro</span><span class="menu-dots"></span><span class="menu-price">Rp 10.000</span></div>
+    <div class="menu-row"><span class="menu-name">Choco ⭐ Best Seller</span><span class="menu-dots"></span><span class="menu-price">Rp 10.000</span></div>
+
+    <div class="menu-cat">Milo Malaysia ⭐ Best Seller</div>
+    <div class="menu-row"><span class="menu-name">Milo Malaysia</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+    <div class="menu-row"><span class="menu-name">Coffee Milo</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+    <div class="menu-row"><span class="menu-name">Milo Butterscotch</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+    <div class="menu-row"><span class="menu-name">Milo Hazelnut</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+    <div class="menu-row"><span class="menu-name">Milo Caramel</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+
+    <div class="menu-cat">Matcha Series</div>
+    <div class="menu-row"><span class="menu-name">Matcha Aren ⭐ Best Seller</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+    <div class="menu-row"><span class="menu-name">Matcha Presso ⭐ Best Seller</span><span class="menu-dots"></span><span class="menu-price">Rp 12.000</span></div>
+
+    <div class="menu-cat">Ice Tea</div>
+    <div class="menu-row"><span class="menu-name">Ice Tea</span><span class="menu-dots"></span><span class="menu-price">Rp 5.000</span></div>
+
+    <div class="menu-cat" style="color:var(--yellow);">Extra Shot</div>
+    <div class="menu-row"><span class="menu-name">+1 shot</span><span class="menu-dots"></span><span class="menu-price">Rp 2.000</span></div>
+    <div class="menu-row"><span class="menu-name">+2 shot</span><span class="menu-dots"></span><span class="menu-price">Rp 4.000</span></div>
+    <div class="menu-row"><span class="menu-name">+3 shot</span><span class="menu-dots"></span><span class="menu-price">Rp 6.000</span></div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="facilities" id="facilities">
+  <h2 class="section-title">Fasilitas <span>Kami</span></h2>
+  <div class="red-line"></div>
+  <div class="fac-list">
+    <div class="fac-card">
+      <div class="fac-icon">☕</div>
+      <div>
+        <div class="fac-name">Teman Coffee</div>
+        <div class="fac-desc">Nikmati kopi dan minuman segar dari Teman Coffee sembari menunggu kendaraan Anda selesai dicuci.</div>
+      </div>
+    </div>
+    <div class="fac-card">
+      <div class="fac-icon">🪑</div>
+      <div>
+        <div class="fac-name">Ruang Tunggu Ber-AC</div>
+        <div class="fac-desc">Area tunggu nyaman dan sejuk dengan WiFi gratis untuk kenyamanan Anda.</div>
+      </div>
+    </div>
+    <div class="fac-card">
+      <div class="fac-icon">🕌</div>
+      <div>
+        <div class="fac-name">Musholla</div>
+        <div class="fac-desc">Tersedia musholla bersih untuk ibadah Anda.</div>
+      </div>
+    </div>
+    <div class="fac-card">
+      <div class="fac-icon">🚿</div>
+      <div>
+        <div class="fac-name">Toilet Bersih</div>
+        <div class="fac-desc">Fasilitas toilet yang selalu dijaga kebersihannya.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING CTA -->
+<section class="booking-cta" id="booking">
+  <h2 class="section-title">Booking <span>Sekarang!</span></h2>
+  <p class="section-sub" style="margin-bottom:24px;">Hubungi kami untuk reservasi dan informasi harga</p>
+  <div class="booking-box">
+    <div class="qr-placeholder">📷 Foto QR<br>WA segera<br>dilengkapi</div>
+    <a href="https://wa.me/6289661173827" class="btn-book">📅 Booking Sekarang!</a>
+    <p style="font-size:13px; color:rgba(255,255,255,0.6);">Atau hubungi admin kami:</p>
+    <a href="https://wa.me/6289661173827" class="btn-wa">💬 0896-6117-3827</a>
+    <p class="cta-ig">@autopluspasuruan</p>
+    <p class="cta-note">*Harga yang tertera adalah <span style="color:var(--yellow);">harga mulai dari</span>. Untuk info lebih lanjut, silakan hubungi admin.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Hubungi <span>Kami</span></h2>
+  <div class="red-line"></div>
+
+  <div class="contact-card">
+    <div class="contact-section-title">Informasi Kontak</div>
+    <div class="contact-item">
+      <span class="contact-icon">📍</span>
+      <div>
+        <div class="contact-label">Alamat</div>
+        <div class="contact-val">Jl. Panglima Sudirman No. 90<br>Pasuruan, Jawa Timur 67115</div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">📞</span>
+      <div>
+        <div class="contact-label">Telepon / WhatsApp</div>
+        <div class="contact-val"><a href="https://wa.me/6289661173827" style="color:var(--yellow);text-decoration:none;">0896-6117-3827</a></div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">🕐</span>
+      <div>
+        <div class="contact-label">Jam Operasional</div>
+        <div class="contact-val">Senin – Minggu: 07.30 – 19.30</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-section-title">Follow Us</div>
+    <a href="https://www.instagram.com/autopluspasuruan" target="_blank" class="ig-btn">📷 @autopluspasuruan</a>
+  </div>
+</section>
+
+<!-- LOKASI / MAP -->
+<section class="map-section" id="map">
+  <div class="contact-section-title" style="margin-bottom:4px;">📍 Lokasi Kami</div>
+
+  <!-- MAPS: Ganti src iframe di bawah dengan embed dari Google Maps Business Profile -->
+  <div class="map-frame">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.1!2d112.9!3d-7.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAuto%20Plus%20Carwash%20Pasuruan!5e0!3m2!1sid!2sid!4v1"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Lokasi Auto Plus Carwash Pasuruan">
+    </iframe>
+  </div>
+  <p style="text-align:center;margin-top:10px;font-size:12px;color:var(--muted);">
+    📍 Jl. Panglima Sudirman No. 90, Pasuruan &nbsp;|&nbsp;
+    <a href="https://maps.google.com/?q=Auto+Plus+Carwash+Jl+Panglima+Sudirman+90+Pasuruan" target="_blank" style="color:var(--yellow);">Buka di Google Maps →</a>
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><span class="r">AUTO</span> PLUS</div>
+  <div class="footer-tag">Kilau Maksimal, Seperti Baru!</div>
+  <div class="footer-links">
+    <a href="#home">Beranda</a>
+    <a href="#services">Layanan</a>
+    <a href="#testimonials">Testimoni</a>
+    <a href="#coffee">Teman Coffee</a>
+    <a href="#facilities">Fasilitas</a>
+    <a href="#contact">Kontak</a>
+  </div>
+  <div class="footer-copy">© 2026 Auto Plus Carwash Pasuruan. All rights reserved.</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+  function filterCat(cat, btn) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.classList.toggle('visible', cat === 'all' || card.dataset.cat === cat);
+    });
+  }
+  window.addEventListener('scroll', () => {
+    document.getElementById('scrollTop').classList.toggle('show', window.scrollY > 300);
+  });
+
+  // Before / After slider
+  (function () {
+    var range = document.getElementById('baRange');
+    if (!range) return;
+    var after = document.getElementById('baAfter');
+    var line = document.getElementById('baLine');
+    var handle = document.getElementById('baHandle');
+    function update() {
+      var v = range.value;
+      after.style.clipPath = 'inset(0 0 0 ' + v + '%)';
+      line.style.left = v + '%';
+      handle.style.left = v + '%';
+    }
+    range.addEventListener('input', update);
+    update();
+  })();
+</script>
+</body>
+</html>
